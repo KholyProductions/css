@@ -1,6 +1,3 @@
-<html>
-
-  <h1>hahahahahahahah</h1>
-
-
-</html>
+function alertHaha(){
+  alert("hahaha");
+}
