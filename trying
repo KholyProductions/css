@@ -1,3 +1,5 @@
-function alertHaha(){
-  alert("hahaha");
-}
+<script type="text/javascript">
+  function alertHaha(){
+    alert("hahaha");
+  }
+</script>  
