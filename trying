@@ -7,6 +7,30 @@
 //media orientation
 @media all and (orientation: portrait)
 
+.vertical_center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.horizontal_center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.image{
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
 
 //Css reset
 html, body, div, span, applet, object, iframe,
