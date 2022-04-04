@@ -1,3 +1,4 @@
+ 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,6 +81,23 @@ body{
 }
 
 
+.centerRelative{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.blackDivs{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 4;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
@@ -89,7 +107,7 @@ body{
 
 
 
-p, h4, h3{
+p, h4, h3, input, div{
   font-family: 'Poppins', sans-serif;
     letter-spacing: 0 !important;
 }
@@ -103,13 +121,12 @@ h1{
 }
 
 h2{
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 h3{
     letter-spacing: 0 !important;
-  font-weight: 600 !important;
-  font-size: 0.95vw;
+  font-size: 1.1vw;
 }
 
 h4{
@@ -117,10 +134,15 @@ h4{
 }
 
 p{
+  color: grey;
   font-size: 0.95vw;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
+.tinyMargin{
+  position: relative;
+  margin-top: 0.5vw;
+}
 
 .smallMargin{
   position: relative;
@@ -142,7 +164,7 @@ p{
   padding-left: 1.5vw;
   padding-right: 1.5vw;
   min-width: 12vw;
-  color: black;
+  color: white;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -155,7 +177,16 @@ p{
 .btn:hover{
   background-color: transparent;
   transition: 0.5s;
+  border: 0.5px solid #79c142;
+  color: black;
 }
+
+.separator{
+  width: 5vw;
+  height: 0.3vw;
+  background-color: #79c142;
+}
+
 
 } 
 
@@ -171,7 +202,6 @@ body, html{
   overflow-x: hidden;
 }
 body{
-
     width: 100%;
 }
 
