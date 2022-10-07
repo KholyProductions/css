@@ -58,15 +58,40 @@
       margin-left: auto;
     }
   
+    .clearFloat{
+      position: relative;
+      clear: both;
+      width: 100%;
+    }
     
   .setShadow{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   
-  
+  input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  padding: 5px;
+}
+
+input[type=radio]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  padding: 5px;
+}
   
     
-  @media only screen and (min-device-width: 800px){/** LARGE DEVICES  **/
+  @media only screen and (min-device-width: 1000px){/** LARGE DEVICES  **/
   
   /** MARGINS **/
   
@@ -140,34 +165,36 @@
       
     
     .btns{
-      padding: 0.7vw;
       padding-left: 1vw;
       padding-right: 1vw;
       padding-top:0.7vw;
       padding-bottom:0.7vw;
       width: fit-content;
       cursor: pointer;
-      border: none;
+      border: 1px solid #4e6d8c;
       text-align: center;
       transition: 0.5s;
+      height: fit-content;
       display: flex;
-      background-color: #fec901;
-      color: black;
+      background-color: #4e6d8c;
+      color: white;
       justify-content: center;
       vertical-align: middle;
       align-items: center;
       font-size: 1.1vw;
       font-weight: 500;
+      border-radius: 25px;
       text-decoration: none;
     }
     
     .btns:hover{
-      border-radius: 25px;
-      color: black;
+      background-color: white !important;
+      color:black;
     }
 
     .btns_white{
       background-color: white !important;
+      color: black !important;
     }
 
     .btns_black{
@@ -188,13 +215,14 @@
       display:none !important;
      }
   
+     
   
   }
   
   
   
   
-  @media only screen and (max-device-width: 799px){ /** SMALL DEVICES  **/
+  @media only screen and (max-device-width: 999px){ /** SMALL DEVICES  **/
   
   
   
@@ -318,7 +346,7 @@
   
   /** ALERTS **/
   
-  @media only screen and (min-device-width: 800px){ /** LARGE DEVICES  **/
+  @media only screen and (min-device-width: 1000px){ /** LARGE DEVICES  **/
   
     
     .alerts{
@@ -370,7 +398,7 @@
   }
   
   
-  @media only screen and (max-device-width: 799px){ /** SMALL DEVICES  **/
+  @media only screen and (max-device-width: 999px){ /** SMALL DEVICES  **/
   
     
     .alerts{
