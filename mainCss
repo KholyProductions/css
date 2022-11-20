@@ -90,8 +90,15 @@ input[type=radio]
   padding: 5px;
 }
   
+.extras{
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: 1vw;
+  margin-top: 2vw;
+}
     
-  @media only screen and (min-device-width: 1000px){/** LARGE DEVICES  **/
+  @media only screen and (min-device-width: 1025px){/** LARGE DEVICES  **/
   
   /** MARGINS **/
   
@@ -177,7 +184,7 @@ input[type=radio]
       height: fit-content;
       display: flex;
       background-color: #4e6d8c;
-      color: white;
+      color: white !important;
       justify-content: center;
       vertical-align: middle;
       align-items: center;
@@ -189,7 +196,7 @@ input[type=radio]
     
     .btns:hover{
       background-color: white !important;
-      color:black;
+      color:black !important;
     }
 
     .btns_white{
@@ -222,7 +229,7 @@ input[type=radio]
   
   
   
-  @media only screen and (max-device-width: 999px){ /** SMALL DEVICES  **/
+  @media only screen and (max-device-width: 1024px){ /** SMALL DEVICES  **/
   
   
   
@@ -230,19 +237,19 @@ input[type=radio]
   
   /** TOP **/
   .mt_1{
-      margin-top:1vw;
+      margin-top:2vw;
   }
   .mt_2{
-      margin-top:2.5vw;
+      margin-top:3vw;
   }
   .mt_3{
-      margin-top:4vw;
+      margin-top:5vw;
   }
   .mt_4{
-      margin-top:6vw;
+      margin-top:7vw;
   }
   .mt_5{
-      margin-top:8vw;
+      margin-top:9vw;
   }
   
   /** LEFT **/
@@ -300,24 +307,33 @@ input[type=radio]
       
       .btns{
         padding: 1.5vw;
-        min-width: 12vw;
+        width: fit-content;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
         cursor: pointer;
         border: none;
         text-align: center;
         border-radius: 5px;
         transition: 0.5s;
         display: flex;
-        background-color: #fec901;
-        color: black;
+        background-color: #4e6d8c;
+        color: white;
         justify-content: center;
         vertical-align: middle;
         align-items: center;
         font-size: 2.2vw;
       }
-      
+
+      .btns:hover{
+        color: white;
+      }
 
       .btns_white{
-        background-color: white !important;
+        background-color: black !important;
+        border: 1px solid black;
+      }
+      .btns_white:hover{
+        color:white !important;
       }
 
       .btns_black{
@@ -339,6 +355,10 @@ input[type=radio]
         display: none !important;
       }
   
+      body,html{
+        width: 100vw;
+        overflow-x: hidden;
+      }
     
     }
   
@@ -346,7 +366,7 @@ input[type=radio]
   
   /** ALERTS **/
   
-  @media only screen and (min-device-width: 1000px){ /** LARGE DEVICES  **/
+  @media only screen and (min-device-width: 1025px){ /** LARGE DEVICES  **/
   
     
     .alerts{
@@ -398,7 +418,7 @@ input[type=radio]
   }
   
   
-  @media only screen and (max-device-width: 999px){ /** SMALL DEVICES  **/
+  @media only screen and (max-device-width: 1024px){ /** SMALL DEVICES  **/
   
     
     .alerts{
